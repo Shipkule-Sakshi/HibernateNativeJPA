@@ -75,6 +75,7 @@ The project uses the following dependencies in pom.xml:-
 ## Regions Table ##
 
 CREATE TABLE regions (
+   
    region_id SERIAL PRIMARY KEY,
     
     region_name VARCHAR(50) NOT NULL
@@ -83,6 +84,7 @@ CREATE TABLE regions (
 ## Countries Table ##
 
 CREATE TABLE countries (
+    
     country_id SERIAL PRIMARY KEY,
     
     country_name VARCHAR(50) NOT NULL,
