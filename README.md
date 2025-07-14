@@ -1,8 +1,8 @@
-JPA Hibernate Example
+## JPA Hibernate Example ##
 
 This project demonstrates how to perform CRUD operations on countries and regions tables using JPA (Jakarta Persistence API) with Hibernate as the provider and PostgreSQL as the database.
 
-It uses:
+It uses:-
 
 Java 23
 
@@ -14,22 +14,31 @@ PostgreSQL 15+
 
 Maven for dependency management
 
-📂 Project Structure
+## 📂 Project Structure ##
 
 src/
+
 ├── main/
+
 │   ├── java/
+
 │   │   ├── app/              # Main application classes
+
 │   │   ├── service/          # Service classes for CRUD
+
 │   │   └── entity/           # JPA Entity classes (Country, Region)
+
 │   └── resources/
+
 │       └── META-INF/
+
 │           └── persistence.xml
+
 └── test/
 
-📦 Maven Dependencies
+## 📦 Maven Dependencies ##
 
-The project uses the following dependencies in pom.xml:
+The project uses the following dependencies in pom.xml:-
 
 <dependencies>
     <dependency>
@@ -47,16 +56,16 @@ The project uses the following dependencies in pom.xml:
     </dependency>
 </dependencies>
 
-🗄 Database Schema
+## 🗄 Database Schema ##
 
-Regions Table
+## Regions Table ##
 
 CREATE TABLE regions (
     region_id SERIAL PRIMARY KEY,
     region_name VARCHAR(50) NOT NULL
 );
 
-Countries Table
+## Countries Table ##
 
 CREATE TABLE countries (
     country_id SERIAL PRIMARY KEY,
@@ -64,9 +73,9 @@ CREATE TABLE countries (
     region_id INT REFERENCES regions(region_id)
 );
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions ##
 
-1. Clone the repository
+1. Clone the repository 
 
 git clone https://github.com/your-username/jpa-hibernate-example.git
 cd jpa-hibernate-example
@@ -83,7 +92,7 @@ Update database credentials in Java files:
 <property name="javax.persistence.jdbc.user" value="postgres"/>
 <property name="javax.persistence.jdbc.password" value="sakshi"/>
 
-🖥 Example Menu
+## 🖥 Example Menu ##
 
 1. Add Region
 2. Add Country
@@ -91,7 +100,7 @@ Update database credentials in Java files:
 4. View Countries
 5. Exit
 
-✅ Features
+## ✅ Features ##
 
 * Add/View countries and regions
 
@@ -101,8 +110,7 @@ Update database credentials in Java files:
 
 * Hibernate as JPA provider
 
-📞Contact:
-
+## 📞Contact:- ##
 For any questions or feedback, feel free to reach out:
 
 Your Name : sakshi shipkule
@@ -111,5 +119,16 @@ Email: shipkulesakshi682@gmail.com
 
 GitHub: Shipkule-Sakshi
 
-Output ScreenShort:-
+## Output ScreenShort:- ##
+
+<img width="1202" height="707" alt="Screenshot 2025-07-14 204948" src="https://github.com/user-attachments/assets/38146a27-8d06-48db-b5e2-e8c9b19da4c6" />
+
+<img width="1379" height="717" alt="Screenshot 2025-07-14 205017" src="https://github.com/user-attachments/assets/39f367ba-e3c5-4952-b80d-abb9560251a8" />
+
+<img width="1390" height="725" alt="Screenshot 2025-07-14 205108" src="https://github.com/user-attachments/assets/f95500be-8f31-417e-8d92-c67dc0f78db6" />
+
+
+
+
+
 
